@@ -1,0 +1,145 @@
+@import '_mixins';
+.ic-callback {
+  //@include sprite(ic-callback);
+  background: url('../img/ic-callback.png') no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  width: 22px;
+  height: 23px;
+}
+.icon-login {
+  @include sprite(ic-login);
+}
+a:hover {
+  .icon-login {
+    @include sprite(ic-login-active);
+  }
+}
+.icon-favorite {
+  @include sprite(ic-favorite);
+}
+.icon-comparing {
+  @include sprite(ic-comparing);
+}
+.active,
+a:hover {
+  .icon-favorite {
+    @include sprite(ic-favorite-active);
+  }
+  .icon-comparing {
+    @include sprite(ic-comparing-active);
+  }
+  .icon-basket {
+    @include sprite(ic-basket-active);
+  }
+}
+.icon-basket {
+  @include sprite(ic-basket);
+}
+.icon-basket_blue {
+  @include sprite(ic-basket-blue);
+}
+.icon-basket_white {
+  @include sprite(ic-basket-white);
+}
+.icon-basket_blue_plus {
+  @include sprite(ic-basket-blue-plus);
+}
+.icon-basket_white_plus {
+  @include sprite(ic-basket-white-plus);
+}
+.icon-search {
+  @include sprite(ic-search);
+}
+.ic-visa {
+  @include sprite(ic-visa);
+}
+.ic-mc {
+  @include sprite(ic-mc);
+}
+.ic-awards {
+  @include sprite(ic-awards);
+}
+.icon-plus {
+  @include sprite(ic-plus);
+}
+.icon-moon {
+  @include sprite(ic-moon);
+}
+.icon-statrup {
+  @include sprite (ic-startup);
+}
+.ic-pass {
+  @include sprite (ic-pass);
+}
+.ic-pass-active {
+  @include sprite (ic-pass-active);
+}
+.ic-turum {
+  //@include sprite(logo-turumburum);
+}
+.icon-showing-more {
+  @include sprite(arrow-showing-more);
+}
+.ic-clip {
+  @include sprite(ic-clip);
+}
+.ic-like {
+  @include sprite(ic-like);
+}
+.ic-dislike {
+  @include sprite(ic-dislike);
+}
+.ic-share {
+  @include sprite(ic-share);
+}
+.ic-share-white {
+  @include sprite(ic-share-white);
+}
+.ic-close-social {
+  @include sprite(ic-close-social);
+}
+.ic-track {
+  @include sprite(ic-track);
+}
+.ic-newpost {
+  @include sprite(ic-newpost);
+}
+.ic-marker {
+  @include sprite(ic-marker);
+}
+.ic-close-sm {
+  @include sprite(ic-close-sm);
+}
+.ic-close-sm-active {
+  @include sprite(ic-close-sm-active);
+}
+.ic-addr-save {
+  @include sprite(ic-addr-save);
+}
+.ic-addr-cancel {
+  @include sprite(ic-addr-cancel);
+}
+.ic-addr-edit {
+  @include sprite(ic-addr-edit);
+}
+.icon-sphere-blue {
+  @include sprite(ic-share-sphere-blue);
+}
+.icon-sphere {
+  @include sprite(ic-share-sphere);
+}
+.icon-bag-blue {
+  @include sprite(ic-share-bag-blue);
+}
+.icon-bag {
+  @include sprite(ic-share-bag);
+}
+.icon-copy {
+  @include sprite(ic-promocode);
+}
+@media (max-width: 767px) {
+  .icon-search {
+    @include sprite(ic-search-mobile);
+  }
+}

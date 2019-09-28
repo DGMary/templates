@@ -1,0 +1,96 @@
+/* sale */
+.shares {
+  &__list {
+    max-width: 986px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 100%;
+    border: 1px solid #EBEBF1;
+    margin: -1px 0 0;
+    display: flex;
+    padding: 40px;
+
+    &-info {
+      padding: 0 0 0 45px;
+    }
+  }
+
+  &__date {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #828282;
+    margin: 0 0 7px;
+  }
+
+  &__name {
+    font: 18px/28px 'ubuntubold', sans-serif;
+    margin: 0 0 15px;
+    display: block;
+  }
+
+  &__limit {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #828282;
+    margin: 0 0 13px;
+  }
+}
+
+.countdown {
+  &__title {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__box {
+    margin: 0 0 15px;
+
+    .num {
+      display: block;
+      font: 28px/32px 'ubuntu_mediumregular', sans-serif;
+      margin: 0 0 5px;
+    }
+
+    .minutes {
+      .num {
+        color: #00782E;
+      }
+    }
+
+    .time {
+      text-align: center;
+    }
+
+    .dots {
+      color: #BDBDBD;
+      font: 24px/28px 'ubuntu_mediumregular', sans-serif;
+      margin: 0 15px;
+    }
+  }
+
+}
+
+
+.shares-item.completed .sale-name,
+.shares-item.completed .sale-limit {
+  color: #828282;
+}
+
+
+.countdown-box .time>span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.countdown-box .count {
+  font-size: 14px;
+  line-height: 16px;
+}
+

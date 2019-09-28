@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Блог" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Комментарий-на-статью" transform="translate(-1305.000000, -5329.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Group-4" transform="translate(1306.000000, 5330.000000)">
+                <path d="M0.35,0.35 L0.35,13.5737454" id="Line-2"></path>
+                <path d="M9.58543881,-0.196684769 L9.58543881,8.90331523" id="Line-2-Copy-7" transform="translate(9.585439, 4.353315) rotate(-315.000000) translate(-9.585439, -4.353315) "></path>
+                <path d="M13.65,10.5 L13.65,13.3" id="Line-2-Copy-2"></path>
+                <path d="M13.65,0.35 L13.65,4.2" id="Line-2-Copy-6"></path>
+                <path d="M2.1,-1.05 L2.1,1.75" id="Line-2-Copy-3" transform="translate(2.100000, 0.350000) rotate(-270.000000) translate(-2.100000, -0.350000) "></path>
+                <path d="M11.2,-1.05 L11.2,1.75" id="Line-2-Copy-5" transform="translate(11.200000, 0.350000) rotate(-270.000000) translate(-11.200000, -0.350000) "></path>
+                <path d="M7,7 L7,20.3" id="Line-2-Copy" transform="translate(7.000000, 13.650000) rotate(-270.000000) translate(-7.000000, -13.650000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

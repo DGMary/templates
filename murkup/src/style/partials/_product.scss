@@ -1,0 +1,106 @@
+.product {
+  &-slider {
+    &-section {
+      padding: 45px 0;
+      .title-h2 {
+        margin: 0 0 25px;
+      }
+      &+.product-slider-section {
+        border-top: 2px solid $borderColorLight;
+      }
+    }
+  }
+  &-list {
+    &-slider {
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 264px;
+        height: 100%;
+        background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0));
+      }
+      .product-item {
+        margin-right: 30px;
+        .img {
+          width: 150px;
+          height: 150px;
+        }
+        .product-description {
+          text-align: left;
+          max-width: none;
+        }
+        .product-name {
+          font-size: 13px;
+        }
+        .price {
+          &-block {
+            margin-right: 7px;
+            padding: 0 0 5px;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          &-box {
+            font-size: 15px;
+            line-height: 19px;
+            .price-old {
+              font-size: 13px;
+              line-height: 18px;
+              margin: 0;
+            }
+          }
+          &-usd {
+            font-size: 15px;
+            line-height: 19px;
+            margin: 2px 0 0;
+          }
+        }
+      }
+      .slick {
+        &-arrow {
+          width: 23px;
+          height: 20px;
+          transform-origin: 50% 50%;
+          &:before {
+            border-style: solid;
+            font-size: 0;
+            opacity: 1;
+            transition: all .2s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+          }
+        }
+        &-prev {
+          transform: translate(0, -50%);
+          right: 57px;
+          left: auto;
+          &:before {
+            border-color: transparent $linkColor transparent transparent;
+            border-width: 8px 23px 8px 0;
+            left: auto;
+            right: 0;
+          }
+          &:hover {
+            &:before {
+              border-width: 10px 28px 10px 0;
+            }
+          }
+        }
+        &-next {
+          &:before {
+            border-color: transparent transparent transparent $linkColor;
+            border-width: 8px 0 8px 23px;
+          }
+          &:hover {
+            &:before {
+              border-width: 10px 0 10px 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

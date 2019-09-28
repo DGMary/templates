@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="47px" viewBox="0 0 40 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M954,814 C954.077723,814 943,805.393818 943,795.384226 C943,789.096892 947.924868,784 954,784 C960.075132,784 965,789.096892 965,795.384226 C965,806.26163 953.922277,814 954,814 Z M954,799.534617 C956.113279,799.534617 957.82643,797.761626 957.82643,795.57453 C957.82643,793.387435 956.113279,791.614444 954,791.614444 C951.886721,791.614444 950.17357,793.387435 950.17357,795.57453 C950.17357,797.761626 951.886721,799.534617 954,799.534617 Z" id="path-1"></path>
+        <filter x="-72.7%" y="-36.7%" width="245.5%" height="206.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.443137255   0 0 0 0 0.694117647   0 0 0 0 0.843137255  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="О-компании" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Магазины" transform="translate(-934.000000, -780.000000)">
+            <g id="Combined-Shape-Copy-6">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#0080CC" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

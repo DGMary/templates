@@ -1,0 +1,187 @@
+.filter {
+  &-section {
+    background: $filterColor;
+    width: 368px;
+    padding: 30px;
+    position: relative;
+    .btn-show {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 40px;
+      color: $colorWhite;
+      background: $btnColor;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      padding: 12px 0;
+      cursor: pointer;
+    }
+    .popup-result {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      color: $colorWhite;
+      font-size: 14px;
+      line-height: 18px;
+      background: $btnColor;
+      padding: 6px 14px 8px 10px;
+      white-space: nowrap;
+      z-index: 5;
+      cursor: pointer;
+      box-shadow: 0 5px 9px $boxShadowBlue;
+      &:before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 0;
+        border-style: solid;
+        border-width: 16px 10px 16px 0;
+        border-color: transparent $btnColor transparent transparent;
+      }
+    }
+  }
+  &-box {
+    margin: 0 0 33px;
+    &__title {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: $ftMontserratSemiBold;
+      cursor: pointer;
+      position: relative;
+      padding-right: 15px;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 10px;
+        height: 2px;
+        background: $linkColor;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        right: 4px;
+        top: 1px;
+        width: 2px;
+        height: 10px;
+        background: $linkColor;
+      }
+    }
+    &__container {
+      //display: none;
+    }
+    &.active {
+      .filter-box__title {
+        &:before {
+          display: none;
+        }
+      }
+      .filter-box__container {
+        //display: none;
+      }
+    }
+    .parameters-block {
+      padding: 17px 0 5px;
+    }
+  }
+  &-link {
+    float: left;
+  }
+  &-items {
+    &-list {
+      margin: 0;
+      padding: 17px 0 5px;
+      list-style: none;
+      li {
+        font-size: 14px;
+        line-height: 1.29;
+        margin: 0 0 14px;
+        a {
+          color: $fontColor;
+        }
+      }
+    }
+  }
+  &-parameters {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 25px 0 0;
+    &-box {
+      width: calc(50% - 25px);
+      input {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #d3d3d3;
+        padding: 0 0 7px;
+        background: none;
+        font-size: 13px;
+        font-family: $ftMontserratRegular;
+      }
+      &.bx-right {
+        &:before {
+          content: '';
+          width: 15px;
+          height: 1px;
+          background: #979797;
+          position: absolute;
+          left: 50%;
+          bottom: 14px;
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+  }
+  &-title {
+    color: $fontColor;
+    font: 18px/22px $ftMontserratSemiBold;
+    border-bottom: 1px solid $borderColorLight;
+    padding: 18px 20px;
+    margin: 0 0 10px;
+  }
+  &__container {
+    .all-parameters-link,
+    .link-more-items{
+      color: $hitBlue;
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 16px;
+      transition: all .3s;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+.close-filter {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 21px;
+  height: 21px;
+  &:after {
+    content: '';
+    background: $fontColor;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+  }
+  &:before {
+    content: '';
+    background: $fontColor;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+  }
+}

@@ -1,0 +1,119 @@
+<div class="modal-content modal-content--login customScrollbar-modal">
+	<a href="#" class="close-modal"  data-dismiss="modal"></a>
+	<div class="modal-body modal-body--login">  
+		<div class="modal-form-wrap">
+			<div class="modal-form-holder">
+				<div class="modal-form-enter form__modal">					
+					<div class="modal-form form_authorization">						
+						<div class="login-form first-step">
+							<span class="modal-title">Вход</span>
+							<form class="form_validate" id="login_form"  method="POST" action="">
+								<div class="row">
+									<div class="input-holder field">									              
+										<input type="text" class="input form-control js-input"  data-validate="required-email-phone">
+										<span class="label-input">E-mail или номер телефона</span>
+										<span class="error-text">Данные введены некорректно</span>									
+									</div>
+								</div>							
+								<div class="row">
+									<span class="text-info">Для авторизации по номеру телефона введите его в формате: 380 xxx xx xx</span>
+								</div>
+								<div class="row submit-holder">
+									<input type="submit" class="btn btn-submit" value="Далее">
+								</div>
+							</form>	
+						</div>
+						<div class="login-form second-step step_email">
+							<span class="modal-title">Вход</span>
+							<form class="form_validate" id="login_form_email"  method="POST" action="">
+								<div class="row">
+									<div class="input-holder field">									              
+										<input type="text" class="input form-control js-input"  data-validate="required-email">
+										<span class="label-input">E-mail</span>
+										<!-- <span class="error-text">Данные введены некорректно</span>									 -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-holder field password_holder">									              
+										<input type="text" class="input form-control js-input"  data-validate="required">
+										<span class="label-input">Пароль</span>
+										<span class="error-text">Данные введены некорректно</span>
+										<span class="pass_icon"><i class="ic-pass"></i></span>										 
+									</div>
+								</div>
+								<div class="row">
+									<a href="" data-openmodal="modals/forgot_pass.html" class="">Восстановить пароль</a>
+								</div>
+								<div class="row submit-holder">
+									<input type="submit" class="btn btn-submit" value="Войти">
+								</div>
+							</form>	
+						</div>						
+						<div class="login-form second-step step_phone">
+							<span class="modal-title">Вход</span>
+							<form class="form_validate" id="login_form_phone"  method="POST" action="">
+								<div class="row">
+									<div class="input-holder field">									              
+										<input type="text" class="input form-control js-input validate_phone"  data-validate="required-number">
+										<span class="label-input">Телефон</span>
+										<span class="error-text">Данные введены некорректно</span>									
+									</div>
+								</div>
+								<div class="row">
+									<span>Введите код из смс</span>
+								</div>
+								<div class="row">
+									<div class="input-holder field field-sms">									              
+										<input maxlength="1" onkeyup="testJump(this);"   size="1" type="text" class="input  js-input input-num-sms"  data-validate="required-num-sms">
+										<input maxlength="1" onkeyup="testJump(this);"   size="1" type="text" class="input  js-input input-num-sms"  data-validate="required-num-sms">	
+										<input maxlength="1" onkeyup="testJump(this);"   size="1" type="text" class="input  js-input input-num-sms"  data-validate="required-num-sms">	
+										<input maxlength="1" onkeyup="testJump(this);"   size="1" type="text" class="input  js-input input-num-sms"  data-validate="required-num-sms">																			
+										<span class="error-text">Код введен неверно. Проверьте правильность ввода.</span>								 
+									</div>
+								</div>
+								<div class="row">
+									<div class="text-holder">
+										<span>Не приходит смс?</span>
+										<a href="#" class="js-send-sms">Отправить еще раз</a>
+									</div>
+								</div>
+								<div class="row submit-holder">
+									<input type="submit" class="btn btn-submit" value="Войти">
+								</div>
+							</form>	
+						</div>
+						<div class="socials">
+							<div class="socials-title-holder">
+								<span class="socials-title">Вход через социальные сети:</span>
+							</div>
+							<div class="social-links">
+								<a href="#" class="social-link social-link-fb"><i class="fab fa-facebook-f"></i></a>
+								<a href="#" class="social-link social-link-tw"><i class="fab fa-twitter"></i></a>	
+								<a href="#" class="social-link social-link-g"><i class="fab fa-google-plus-g"></i></a>															
+							</div>
+						</div>
+					</div> 					           
+				</div>
+			</div> 
+			<div class="bottom-button">
+				<div class="link-bottom-holder">
+					<a href="" data-openmodal="modals/registr.html" class="registration-link">Регистрация</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function testJump(x){
+		var ml = ~~x.getAttribute('maxlength');
+		if(ml && x.value.length >= ml){
+			do{
+				x = x.nextSibling;
+			}
+			while(x && !(/text/.test(x.type)));
+			if(x && /text/.test(x.type)){
+				x.focus();
+			}
+		}
+	}
+	</script>
