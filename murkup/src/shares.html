@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+
+<body>
+    //= templates/header.html
+    <main class="main">
+        <div class="section section-shares">
+            <!-- breadcrambs -->
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="">
+                            <span class="breadcrumbs__title"></span>Главная </span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__page">Акции Dicentra</span>
+                    </li>
+                </ul>
+            </div>
+            <!--../ breadcrambs -->
+            <div class="page__title">
+                <span class="page__title-text">Акции</span>
+            </div>
+            <!--../ page title -->
+
+            <div class="shares__list">
+                <div class="shares__item">
+                    <div class="shares__item-img">
+                        <a href="" class="shares__link">
+                            <img class="shares__img" src="img/share02.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="shares__item-info">
+                        <span class="shares__date">03 июня 2019</span>
+                        <span class="shares__name">Летняя распродажа до 50%. </span>
+                        <div class="shares__promocode">Промокод:
+                            <span class="shares__promocode-code">SALE50</span>
+                        </div>
+
+                        <div class="countdown">
+                            <span class="countdown__title">До конца осталось:</span>
+                            <div class="countdown__box">
+                                <div class="countdown__item" data-date="2019/11/01 00:00:00" data-d="дней"
+                                    data-h="часов" data-m="минут"></div>
+                            </div>
+                        </div>
+
+                        <span class="shares__limit">Акция действует до: 14.07.2019</span>
+                        <a href="" class="shares__more-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="shares__item shares__item-completed">
+                    <div class="shares__item-img">
+                        <a href="" class="shares__link">
+                            <img class="shares__img" src="img/share02.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="shares__item-info">
+                        <span class="shares__date">03 июня 2019</span>
+                        <span class="shares__name">Летняя распродажа до 50%. </span>
+                        <div class="shares__promocode">Промокод:
+                            <span class="shares__promocode-code">SALE50</span>
+                        </div>
+                        <span class="shares__limit">Акция завершена</span>
+                        <a href="" class="shares__more-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pagination  -->
+            <div class="pagination">
+                <div class="pagination__container">
+                    <ul class="pagination__list">
+                        <li class="pagination__item pagination__item-prev ">
+                            <a class="pagination__link" href="">
+                                <span class="pagination__text">Назад</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item pagination__item-active">
+                            <a class="pagination__link" href="">
+                                <span class="pagination__text">1</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="">
+                                <span class="pagination__text">2</span>
+                            </a>
+                        </li>
+                        <li class="pagination__list pagination__item-next">
+                            <a class="pagination__link" href="">
+                                <span class="pagination__text">Вперед</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--../ pagination  -->
+        </div>
+        <!--../ section -->
+    </main>
+    //= templates/footer.html
+</body>
+
+</html>
