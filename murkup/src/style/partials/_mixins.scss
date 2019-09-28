@@ -6,19 +6,19 @@ $sprite: map-get($icons, sprite) !default;
 // Gets an attribute from the sass map
 @function sprite-attr($icon, $attr) {
   $newIcon: map-get($icons, $icon);
-  @if $newIcon == null {
+
+  @if $newIcon==null {
     @warn "Can't find an icon with the name #{$icon}";
   }
+
   @return map-get($newIcon, $attr);
 }
 
 @function icon-attr($icon) {
-  $attr: (
-          width: sprite-attr($icon, width),
-          height: sprite-attr($icon, height),
-          x: sprite-attr($icon, backgroundX),
-          y: sprite-attr($icon, backgroundY)
-  );
+  $attr: (width: sprite-attr($icon, width),
+      height: sprite-attr($icon, height),
+      x: sprite-attr($icon, backgroundX),
+      y: sprite-attr($icon, backgroundY));
 
   @return $attr;
 }
@@ -29,9 +29,10 @@ $sprite: map-get($icons, sprite) !default;
   background-image: url(map-get($sprite, svgPath));
   background-size: map-get($sprite, width) map-get($sprite, height);
 }
+
 // For use with the gulp sprite plugin
 @mixin sprite($icon, $type: all) {
-  @if $type == all {
+  @if $type==all {
     // Shares the backgrounds
     @extend %sprite;
   }
@@ -39,14 +40,55 @@ $sprite: map-get($icons, sprite) !default;
   $iconMap: icon-attr($icon);
 
   // Outputs dimensions in em
-  @if $type == all or $type == size {
+  @if $type==all or $type==size {
     width: map-get($iconMap, width);
     height: map-get($iconMap, height);
   }
 
   // Outputs background position in em
-  @if $type == all or $type == bg {
+  @if $type==all or $type==bg {
     background-position: map-get($iconMap, x)-5 map-get($iconMap, y)-5;
     //background-position: map-get($iconMap, x) map-get($iconMap, y);
+  }
+}
+
+/* MEDIA */
+@mixin media($size, $size2: false) {
+  @if ($size2=='height') {
+    @media (min-height: $size) {
+      @content;
+    }
+  }
+
+  @else if $size2 {
+    @media (max-width: $size) and (min-width: $size2) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+@mixin media-df($size, $size2: false) {
+  @if ($size2=='height') {
+    @media (min-height: $size) {
+      @content;
+    }
+  }
+
+  @else if $size2 {
+    @media (max-width: $size) and (min-width: $size2) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (max-width: $size) {
+      @content;
+    }
   }
 }

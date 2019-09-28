@@ -23,7 +23,7 @@ $bgfb: #3962a1;
 $bgtw: #04abea;
 $bgg: #dc4e41;
 $bgi: #bc2a8d;
-$bgy:#f61c0d; 
+$bgy:#f61c0d;
 $bgCheckbox : #d8d8d8;
 $statusNew: #8dbd54;
 
@@ -34,28 +34,73 @@ $hitBlue: #4a90e2;
 $bgNew: #ff9900;
 
 // Fonts
-$ftMontserratBlack: 'montserratblack', sans-serif;
-$ftMontserratBlackItalic: 'montserratblack_italic', sans-serif;
-$ftMontserratBold: 'montserratbold', sans-serif;
-$ftMontserratBoldItalic: 'montserratbold_italic', sans-serif;
-$ftMontserratExtraBold: 'montserratextrabold', sans-serif;
-$ftMontserratExtraBoldItalic: 'montserratextrabold_italic', sans-serif;
-$ftMontserratExtraLight: 'montserratextralight', sans-serif;
-$ftMontserratExtraLightItalic: 'montserratextralight_italic', sans-serif;
-$ftMontserratItalic: 'montserratitalic', sans-serif;
-$ftMontserratLight: 'montserratlight', sans-serif;
-$ftMontserratLightItalic: 'montserratlight_italic', sans-serif;
-$ftMontserratMedium: 'montserratmedium', sans-serif;
-$ftMontserratMediumItalic: 'montserratmedium_italic', sans-serif;
-$ftMontserratRegular: 'montserratregular', sans-serif;
-$ftMontserratSemiBold: 'montserratsemibold', sans-serif;
-$ftMontserratSemiBoldItalic: 'montserratsemibold_italic', sans-serif;
-$ftMontserratThin: 'montserratthin', sans-serif;
-$ftMontserratThinItalic: 'montserratthin_italic', sans-serif;
+$ftMontserratBlack: 'montserratblack',
+sans-serif;
+$ftMontserratBlackItalic: 'montserratblack_italic',
+sans-serif;
+$ftMontserratBold: 'montserratbold',
+sans-serif;
+$ftMontserratBoldItalic: 'montserratbold_italic',
+sans-serif;
+$ftMontserratExtraBold: 'montserratextrabold',
+sans-serif;
+$ftMontserratExtraBoldItalic: 'montserratextrabold_italic',
+sans-serif;
+$ftMontserratExtraLight: 'montserratextralight',
+sans-serif;
+$ftMontserratExtraLightItalic: 'montserratextralight_italic',
+sans-serif;
+$ftMontserratItalic: 'montserratitalic',
+sans-serif;
+$ftMontserratLight: 'montserratlight',
+sans-serif;
+$ftMontserratLightItalic: 'montserratlight_italic',
+sans-serif;
+$ftMontserratMedium: 'montserratmedium',
+sans-serif;
+$ftMontserratMediumItalic: 'montserratmedium_italic',
+sans-serif;
+$ftMontserratRegular: 'montserratregular',
+sans-serif;
+$ftMontserratSemiBold: 'montserratsemibold',
+sans-serif;
+$ftMontserratSemiBoldItalic: 'montserratsemibold_italic',
+sans-serif;
+$ftMontserratThin: 'montserratthin',
+sans-serif;
+$ftMontserratThinItalic: 'montserratthin_italic',
+sans-serif;
 
-$ftMuseoSansCyrl100: 'Museo Sans Cyrl 100', sans-serif;
-$ftMuseoSansCyrl300: 'Museo Sans Cyrl 300', sans-serif;
-$ftMuseoSansCyrl500: 'Museo Sans Cyrl 500', sans-serif;
-$ftMuseoSansCyrl700: 'Museo Sans Cyrl 700', sans-serif;
-$ftMuseoSansCyrl900: 'Museo Sans Cyrl 900', sans-serif;
+$ftMuseoSansCyrl100: 'Museo Sans Cyrl 100',
+sans-serif;
+$ftMuseoSansCyrl300: 'Museo Sans Cyrl 300',
+sans-serif;
+$ftMuseoSansCyrl500: 'Museo Sans Cyrl 500',
+sans-serif;
+$ftMuseoSansCyrl700: 'Museo Sans Cyrl 700',
+sans-serif;
+$ftMuseoSansCyrl900: 'Museo Sans Cyrl 900',
+sans-serif;
 $ftAwesome: 'FontAwesome';
+
+
+// media queries
+
+// desktop first
+$desktop-lg: 1365px;
+$desktop-md: 1179px;
+$desktop: 1023px;
+$tablet-md: 920px;
+$tablet: 767px;
+$phone: 639px;
+$phone-sm: 479px;
+
+// mobile first
+$desktop-xxl-mf: 1960px;
+$desktop-xl-mf: 1600px;
+$desktop-lg-mf: 1366px;
+$desktop-md-mf: 1180px;
+$desktop-mf: 1024px;
+$tablet-mf: 768px;
+$phone-mf: 640px;
+$phone-sm-mf: 480px;

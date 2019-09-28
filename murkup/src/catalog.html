@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+
+<body>
+    //= templates/header.html
+    <main class="main">
+        <div class="section catalog-section">
+            <div class="container">
+                <div class="catalog">
+                    <!-- <div class="filter-section">
+                        <span class="close-filter"></span>
+                        <div class="filter-title">Фильтры</div>
+                        <div class="filter__container">
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Модель</div>
+                                <div class="filter-box__container">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>MacBook Pro 13</span>
+                                                            <span class="count">(12)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>MacBook Pro 15</span>
+                                                            <span class="count">(16)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Цена</div>
+                                <div class="filter-box__container">
+                                    <div class="parameters-block">
+                                        <div class="ui-slider-track-container">
+                                            <div class="ui-slider-track">
+
+                                            </div>
+                                        </div>
+                                        <div class="filter-parameters">
+                                            <div class="filter-parameters-box bx-left">
+                                                <div class="bx-filter-input-container">
+                                                    <input class="min-price" type="text" placeholder="от">
+                                                </div>
+                                            </div>
+                                            <div class="filter-parameters-box bx-right">
+                                                <div class="bx-filter-input-container">
+                                                    <input class="max-price" type="text" placeholder="до">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Модель процессора</div>
+                                <div class="filter-box__container">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Intel Core i5 - 5257U</span>
+                                                            <span class="count">(7)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Intel Core i5 - 5287U</span>
+                                                            <span class="count">(2)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Intel Core i7 - 4770HQ</span>
+                                                            <span class="count">(15)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Intel Core i7 - 4980HQ</span>
+                                                            <span class="count">(3)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Разрешение экрана</div>
+                                <div class="filter-box__container">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>1280 x 800</span>
+                                                            <span class="count">(0)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>2560 х 1600</span>
+                                                            <span class="count">(22)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>2880 х 1800</span>
+                                                            <span class="count">(0)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Цвет</div>
+                                <div class="filter-box__container">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Красный</span>
+                                                            <span class="count">(0)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Золотой</span>
+                                                            <span class="count">(22)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>Черный</span>
+                                                            <span class="count">(0)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Объем диска</div>
+                                <div class="filter-box__container">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>256</span>
+                                                            <span class="count">(12)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-box active">
+                                <div class="filter-box__title">Год выпуска</div>
+                                <div class="filter-box__container">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>2017</span>
+                                                            <span class="count">(12)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="input-checkbox">
+                                                        <input type="checkbox" class="">
+                                                        <span class="checkbox-text">
+                                                            <span>2018</span>
+                                                            <span class="count">(12)</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="all-parameters-link">+ Все параметры</span>
+                        </div>
+                        <div class="btn-show">Показать 16 товаров</div>
+                    </div> -->
+
+                    <div class="catalog__container">
+
+                        <!-- breadcrambs -->
+                        <div class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="">
+                                        <span class="breadcrumbs__title"></span>Главная </span>
+                                    </a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span class="breadcrumbs__page">Акции Dicentra</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--../ breadcrambs -->
+
+                        <div class="page__title">
+                            <span class="page__title-text">Акции</span>
+                        </div>
+
+                        <div class="filters-selected">   
+                            <span class="filters-selected__title">Вы выбрали:</span> 
+                            <ul class="filters-selected__list">
+                                <li class="filters-selected__item">
+                                    <span class="filters-selected__name">Хризантема</span>
+                                </li>
+                                <li class="filters-selected__item">
+                                    <span class="filters-selected__name">Хризантема</span>
+                                </li>
+                                <li class="filters-selected__item">
+                                    <span class="filters-selected__name">Хризантема</span>
+                                </li>
+                            </ul>
+                            <span class="filters-selected__reset">Очистить все</span>                            
+                        </div>
+
+
+                        <div class="catalog__list">
+                            <!-- product item -->
+                            <div class="product-item">
+                                <div class="product-item__label">
+                                    <span class="label-discount">- 25%</span>
+                                </div>                               
+                                <div class="product-item__img-holder">
+                                    <a href="" class="product-item__link">
+                                        <img class="product-item__img" src="img/product01.jpg" alt="product-item">
+                                    </a>
+                                </div>
+                                <div class="product-item__description">                                    
+                                    <div class="product-item__name">
+                                        <a href="" class="product-item__name-link">Букет # 29 Роз Джумилия</a>
+                                    </div>
+                                    <div class="product-item__price">
+                                        <div class="price">                                            
+                                            <div class="price__item price__item-old">649</div>
+                                            <div class="price__item"><span>865 грн </span></div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="hidden-info">
+                                        <div class="hidden-info__holder">
+                                            <a class="btn__buy" href="#">В корзину</a>
+                                            <a class="btn__link" href="#">Быстрый заказ</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product item ending -->
+                            <!-- product item -->
+                            <div class="product-item">
+                                    <div class="product-item__label">
+                                        <span class="label-discount">- 25%</span>
+                                    </div>                               
+                                    <div class="product-item__img-holder">
+                                        <a href="" class="product-item__link">
+                                            <img class="product-item__img" src="img/product01.jpg" alt="product-item">
+                                        </a>
+                                    </div>
+                                    <div class="product-item__description">                                    
+                                        <div class="product-item__name">
+                                            <a href="" class="product-item__name-link">Букет # 29 Роз Джумилия</a>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="price">                                            
+                                                <div class="price__item price__item-old">649</div>
+                                                <div class="price__item"><span>865 грн </span></div>
+                                            </div>                                    
+                                        </div>
+                                        <div class="hidden-info">
+                                            <div class="hidden-info__holder">
+                                                <a class="btn__buy" href="#">В корзину</a>
+                                                <a class="btn__link" href="#">Быстрый заказ</a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- product item ending -->
+                            <!-- product item -->
+                            <div class="product-item">
+                                    <div class="product-item__label">
+                                        <span class="label-discount">- 25%</span>
+                                    </div>                               
+                                    <div class="product-item__img-holder">
+                                        <a href="" class="product-item__link">
+                                            <img class="product-item__img" src="img/product01.jpg" alt="product-item">
+                                        </a>
+                                    </div>
+                                    <div class="product-item__description">                                    
+                                        <div class="product-item__name">
+                                            <a href="" class="product-item__name-link">Букет # 29 Роз Джумилия</a>
+                                        </div>
+                                        <div class="product-item__price">
+                                            <div class="price">                                            
+                                                <div class="price__item price__item-old">649</div>
+                                                <div class="price__item"><span>865 грн </span></div>
+                                            </div>                                    
+                                        </div>
+                                        <div class="hidden-info">
+                                            <div class="hidden-info__holder">
+                                                <a class="btn__buy" href="#">В корзину</a>
+                                                <a class="btn__link" href="#">Быстрый заказ</a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- product item ending -->
+                            <!-- product item -->
+                            <div class="product-item">
+                                <div class="product-item__label">
+                                    <span class="label-discount">- 25%</span>
+                                </div>                               
+                                <div class="product-item__img-holder">
+                                    <a href="" class="product-item__link"><img class="product-item__img" src="img/product01.jpg" alt="product-item">
+                                    </a>
+                                </div>
+                                <div class="product-item__description">                                    
+                                    <div class="product-item__name">
+                                        <a href="" class="product-item__name-link">Букет # 29 Роз Джумилия</a>
+                                    </div>
+                                    <div class="product-item__price">
+                                        <div class="price">                                            
+                                            <div class="price__item price__item-old">649</div>
+                                            <div class="price__item"><span>865 грн </span></div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="hidden-info">
+                                        <div class="hidden-info__holder">
+                                            <a class="btn__buy" href="#">В корзину</a>
+                                            <a class="btn__link" href="#">Быстрый заказ</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product item ending -->
+
+
+                        </div>
+                        <div class="paging-panel">
+                            <div class="pages-counter">
+                                <span class="pages-counter-title">Показывать:</span>
+                                <select class="select">
+                                    <option>по 32</option>
+                                    <option>по 64</option>
+                                    <option>по 128</option>
+                                </select>
+                            </div>
+                            <div class="show-more">
+                                <div class="link-show-more">
+                                    <i class="icon-showing-more"></i>
+                                    <span>Показать еще</span>
+                                </div>
+                            </div>
+                            <ul class="paging">
+                                <li class="active"><span>1</span></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li>...</li>
+                                <li><a href="">10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section viewed-products-section">
+            <div class="container">
+                <div class="viewed-products">
+                    <div class="viewed-products-heading">
+                        <div class="viewed-products-title">Вы просматривали</div>
+                        <div class="link-holder">
+                            <a href="" class="link-more">Все просмотренные</a>
+                        </div>
+                    </div>
+                    <div class="viewed-products-slider">
+                        <div class="product-item-item">
+                            <div class="img">
+                                <a href=""><img src="img/img-product04.jpg" alt="product-item"></a>
+                            </div>
+                            <div class="product-item-descr">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-item-name">
+                                    <a href="">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar Space Gray (MPTR2)
+                                        2017</a>
+                                </div>
+                                <div class="price-block">
+                                    <div class="price-box">
+                                        <div class="price-old"><span>31 999 грн</span></div>
+                                        <div class="price"><span>28 099 грн </span></div>
+                                    </div>
+                                    <div class="price-usd">$1 045</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item-item">
+                            <div class="img">
+                                <a href=""><img src="img/img-product01.jpg" alt="product-item"></a>
+                            </div>
+                            <div class="product-item-descr">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-item-name">
+                                    <a href="">Apple iPhone 8 256Gb Silver</a>
+                                </div>
+                                <div class="price-block">
+                                    <div class="price-box">
+                                        <div class="price-old"><span>31 999 грн</span></div>
+                                        <div class="price"><span>28 099 грн </span></div>
+                                    </div>
+                                    <div class="price-usd">$1 045</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item-item">
+                            <div class="img">
+                                <a href=""><img src="img/img-product04.jpg" alt="product-item"></a>
+                            </div>
+                            <div class="product-item-descr">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-item-name">
+                                    <a href="">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar Space Gray (MPTR2)
+                                        2017</a>
+                                </div>
+                                <div class="price-block">
+                                    <div class="price-box">
+                                        <div class="price-old"><span>31 999 грн</span></div>
+                                        <div class="price"><span>28 099 грн </span></div>
+                                    </div>
+                                    <div class="price-usd">$1 045</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ceo-section">
+            <div class="container">
+                <div class="ceo-block">
+                    <div class="text-block">
+                        <h1>Доставка цветов в Киеве круглосуточно</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo non consequuntur delectus culpa eveniet. Ad provident nihil dolorem, totam sed dolorum! Tempora eius sequi excepturi, laborum inventore in voluptate omnis.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloribus? Illo beatae quidem, nostrum cum incidunt eligendi culpa inventore vel magni quibusdam ea excepturi rerum. Alias quo amet voluptate neque. </p>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus soluta quidem suscipit explicabo rem. Dolore minus sed nesciunt a omnis recusandae tenetur magni id, sequi blanditiis eius soluta quis neque.
+                        </p>
+                    </div>
+                    <a href="" class="opening-text">
+                        <i class="icon-plus"></i>
+                        <span>Подробнее</span>
+                        <span class="hidden">Свернуть</span>
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </main>
+    //= templates/footer.html
+</body>
+
+</html>
